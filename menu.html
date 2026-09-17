@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Carta completa de productos - Heladería Dankevsa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/11c9ee736fbb5aad34a1729556a7c323-cono-de-helado-colorido.webp" type="image/webp">
+    <link rel="stylesheet" href="code.css">
+    <title>Menú - Heladería Dankevsa</title>
+</head>
+
+<body class="cuerpo">
+    <!-- HEADER -->
+    <header class="header">
+        <img src="images/11c9ee736fbb5aad34a1729556a7c323-cono-de-helado-colorido.webp" alt="Logo Heladería"
+            class="logo">
+        <h1>¡Visítanos en Dankevsa!</h1>
+        <a href="reservas.html" class="btn-cta">🍨 Reserva ahora</a>
+    </header>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#experiencia">Experiencias</a></li>
+            <li class="activo"><a href="menu.html">Productos</a></li>
+            <li><a href="index.html#nosotros">Nosotros</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="reseñas.html">Reseñas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <p class="breadcrumb"><a href="index.html">Inicio</a> &gt; Menú completo</p>
+
+    <main>
+        <section class="contenido-simple">
+
+            <!-- CARTA EN IMAGEN -->
+            <article id="carta">
+                <h2 style="text-align: center;">Nuestra Carta</h2>
+                <p style="text-align: center;">Copas, banana split y helados infantiles hechos con mucho cariño.
+                    ¡Elige tu favorito!</p>
+
+                <div class="marco-menu">
+                    <img src="images/menu-completo.jpg" alt="Carta de productos Heladería Dankevsa" class="img-menu">
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="images/menu-completo.jpg" download="Carta-Dankevsa.jpg" class="btn-accion">⬇️ Descargar
+                        carta</a>
+                    <a href="images/menu-completo.jpg" target="_blank" rel="noopener"
+                        class="btn-accion btn-secundario">🔍 Ver en grande</a>
+                    <button class="btn-accion btn-secundario" id="btn-compartir">🔗 Compartir</button>
+                </div>
+            </article>
+
+            <!-- LISTA BUSCABLE DE PRODUCTOS -->
+            <article id="lista-productos">
+                <h2 style="text-align:center;">Busca tu producto</h2>
+
+                <div class="barra-busqueda">
+                    <input type="search" id="buscador-productos" placeholder="🔍 Busca: oreo, brownie, fresa...">
+                </div>
+
+                <div class="filtros-categoria">
+                    <button class="btn-categoria activo-cat" data-categoria="todas">Todas</button>
+                    <button class="btn-categoria" data-categoria="copas">Copas</button>
+                    <button class="btn-categoria" data-categoria="infantiles">Infantiles</button>
+                </div>
+
+                <div class="tarjetas-productos" id="lista-menu" style="flex-wrap:wrap;">
+                    <div class="item-producto" data-categoria="copas">
+                        <h3>Copa Brownie</h3>
+                        <p>Delicioso brownie con 2 sabores de helado, bañados en salsa de chocolate, chantilly y un
+                            barquillo relleno de arequipe.</p>
+                        <span class="precio">$10,000</span>
+                    </div>
+                    <div class="item-producto" data-categoria="copas">
+                        <h3>Copa Elástica</h3>
+                        <p>Trozos de gelatina con 2 sabores de helado, chantilly, galleta y salsa de mora.</p>
+                        <span class="precio">$8,500</span>
+                    </div>
+                    <div class="item-producto" data-categoria="copas">
+                        <h3>Copa Queso</h3>
+                        <p>2 sabores de helado con queso, chantilly, 1 cereza y 2 barquillos rellenos de arequipe.</p>
+                        <span class="precio">$9,500</span>
+                    </div>
+                    <div class="item-producto" data-categoria="copas">
+                        <h3>Copa Fragola</h3>
+                        <p>Exquisitas fresas con chantilly, 1 barquillo y salsa de tu preferencia.</p>
+                        <span class="precio">$9,500</span>
+                    </div>
+                    <div class="item-producto" data-categoria="copas">
+                        <h3>Copa Tropical</h3>
+                        <p>Manzana, fresas, mango, kiwi y cereza con 3 sabores de helado, chantilly y salsa de tu
+                            preferencia.</p>
+                        <span class="precio">$11,500</span>
+                    </div>
+                    <div class="item-producto" data-categoria="copas">
+                        <h3>Copa Oreo</h3>
+                        <p>Trozos de galleta Oreo, 2 sabores de helado, chantilly, 2 barquillos, lluvia de chocolate y
+                            salsa de chocolate.</p>
+                        <span class="precio">$10,500</span>
+                    </div>
+                    <div class="item-producto" data-categoria="copas">
+                        <h3>Copa Durazno</h3>
+                        <p>Trozos de durazno con 2 sabores de helado, chantilly, 2 barquillos y salsa de chocolate.</p>
+                        <span class="precio">$10,500</span>
+                    </div>
+                    <div class="item-producto" data-categoria="copas">
+                        <h3>Copa M&amp;M</h3>
+                        <p>2 sabores de helado con M&amp;M, crema chantilly, 1 barquillo y lluvia de colores.</p>
+                        <span class="precio">$8,500</span>
+                    </div>
+                    <div class="item-producto" data-categoria="copas">
+                        <h3>Banana Split</h3>
+                        <p>Banana con cereal, 3 sabores de helado, chantilly, 2 barquillos, salsas, fresas y chispitas
+                            de colores.</p>
+                        <span class="precio">$9,500</span>
+                    </div>
+                    <div class="item-producto" data-categoria="infantiles">
+                        <h3>Payasito</h3>
+                        <p>Helado infantil decorado como payaso, con barquillo y chispitas de colores.</p>
+                        <span class="precio">$5,500</span>
+                    </div>
+                    <div class="item-producto" data-categoria="infantiles">
+                        <h3>Arañita</h3>
+                        <p>Helado decorado con gomas de colores y chispitas, en forma de arañita.</p>
+                        <span class="precio">$6,000</span>
+                    </div>
+                    <div class="item-producto" data-categoria="infantiles">
+                        <h3>Osito</h3>
+                        <p>Helado en forma de osito con galletas y decoración especial para los más pequeños.</p>
+                        <span class="precio">$5,500</span>
+                    </div>
+                    <div class="item-producto" data-categoria="infantiles">
+                        <h3>Gusanito</h3>
+                        <p>3 sabores de helado con gomas de gusanitos, salsas y barquillo.</p>
+                        <span class="precio">$6,000</span>
+                    </div>
+                    <div class="item-producto" data-categoria="infantiles">
+                        <h3>Ratoncito</h3>
+                        <p>Helado decorado como ratoncito con barquillos, gomas y chispitas de colores.</p>
+                        <span class="precio">$5,500</span>
+                    </div>
+                    <div class="item-producto" data-categoria="infantiles">
+                        <h3>Helado Carnavalito</h3>
+                        <p>2 sabores de helado, chantilly, ositos Grissly, 2 barquillos y chispitas de colores.</p>
+                        <span class="precio">$5,500</span>
+                    </div>
+                </div>
+
+                <p class="sin-resultados" id="sin-resultados">😔 No encontramos productos con ese nombre. Intenta con
+                    otra palabra.</p>
+
+                <div style="text-align:center;">
+                    <a href="reservas.html" class="btn-accion">Reservar mesa</a>
+                    <a href="https://wa.me/573001234567?text=Hola%20Dankevsa,%20quiero%20hacer%20un%20pedido"
+                        target="_blank" rel="noopener" class="btn-accion btn-secundario">💬 Pedir por WhatsApp</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="pie">
+        <div class="pie-columnas">
+            <div>
+                <h4>Dankevsa</h4>
+                <p>Helados artesanales hechos con amor desde el corazón de la ciudad.</p>
+            </div>
+            <div>
+                <h4>Enlaces</h4>
+                <a href="index.html">Inicio</a>
+                <a href="menu.html">Menú</a>
+                <a href="reservas.html">Reservas</a>
+                <a href="reseñas.html">Reseñas</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="privacidad.html">Política de privacidad</a>
+            </div>
+            <div>
+                <h4>Contáctanos</h4>
+                <a href="tel:+573001234567">📞 300 123 4567</a>
+                <a href="mailto:hola@dankevsa.com">✉️ hola@dankevsa.com</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Calle+100+%2340-51" target="_blank"
+                    rel="noopener">📍 Calle 100 #40-51</a>
+            </div>
+        </div>
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/dankevsa" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+            <a href="https://www.facebook.com/dankevsa" target="_blank" rel="noopener" aria-label="Facebook">👍</a>
+            <a href="https://wa.me/573001234567" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+            <a href="mailto:hola@dankevsa.com" aria-label="Correo">✉️</a>
+        </div>
+        <hr>
+        Derechos reservados &copy; 2026 Heladería Dankevsa. <br>
+        Horario: Lunes a Domingo, 10:00 a.m. - 10:00 p.m.
+    </footer>
+
+    <!-- AVISO DE COOKIES -->
+    <div class="aviso-cookies" id="cookie-banner">
+        <p>🍪 Usamos cookies para mejorar tu experiencia y ofrecerte los mejores helados.
+            <a href="privacidad.html" style="color: #ff8fab; text-decoration: underline;">Política de privacidad</a>
+        </p>
+        <span>
+            <button class="btn-cookies" id="btn-rechazar-cookies"
+                style="background:#ffffff;color:#d81b60;border:2px solid #ff8fab;">Rechazar</button>
+            <button class="btn-cookies" id="btn-aceptar-cookies">Aceptar</button>
+        </span>
+    </div>
+
+    <button class="btn-scroll-top" id="btn-scroll-top" aria-label="Volver arriba">↑</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

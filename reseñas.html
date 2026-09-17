@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Reseñas de clientes de Heladería Dankevsa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/11c9ee736fbb5aad34a1729556a7c323-cono-de-helado-colorido.webp" type="image/webp">
+    <link rel="stylesheet" href="code.css">
+    <title>Reseñas - Heladería Dankevsa</title>
+</head>
+
+<body class="cuerpo">
+    <!-- HEADER -->
+    <header class="header">
+        <img src="images/11c9ee736fbb5aad34a1729556a7c323-cono-de-helado-colorido.webp" alt="Logo Heladería"
+            class="logo">
+        <h1>¡Visítanos en Dankevsa!</h1>
+        <a href="reservas.html" class="btn-cta">🍨 Reserva ahora</a>
+    </header>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#experiencia">Experiencias</a></li>
+            <li><a href="menu.html">Productos</a></li>
+            <li><a href="index.html#nosotros">Nosotros</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li class="activo"><a href="reseñas.html">Reseñas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <p class="breadcrumb"><a href="index.html">Inicio</a> &gt; Reseñas</p>
+
+    <main>
+        <section class="seccion-ancha">
+            <article id="resenas">
+                <h2>Opiniones de nuestros clientes</h2>
+                <p>Esto es lo que dicen quienes ya probaron nuestros helados. ¡Gracias por su cariño! 💕</p>
+
+                <div class="promedio-resenas" id="promedio-resenas"></div>
+
+                <div class="filtro-wrapper">
+                    <label for="filtro-resenas">Filtrar por:</label>
+                    <select id="filtro-resenas">
+                        <option value="todas">Todas las reseñas</option>
+                        <option value="5">⭐⭐⭐⭐⭐ (5)</option>
+                        <option value="4">⭐⭐⭐⭐ (4)</option>
+                        <option value="3">⭐⭐⭐ (3)</option>
+                        <option value="2">⭐⭐ (2)</option>
+                        <option value="1">⭐ (1)</option>
+                    </select>
+                </div>
+
+                <div id="lista-resenas">
+                    <div class="tarjeta-resena">
+                        <p class="comentario">"¡La copa fantasía es increíble! El ambiente es muy acogedor y la
+                            atención de primera."</p>
+                        <span class="autor-resena">- Sofía M. ⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="tarjeta-resena">
+                        <p class="comentario">"El helado de veteado de mora es mi debilidad absoluto. ¡Súper
+                            recomendado!"</p>
+                        <span class="autor-resena">- Carlos R. ⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="tarjeta-resena">
+                        <p class="comentario">"Excelente para ir con la familia los domingos, los niños aman la copa
+                            queso."</p>
+                        <span class="autor-resena">- Laura T. ⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="tarjeta-resena">
+                        <p class="comentario">"Buen sabor, aunque las mesas a veces tardan un poco los fines de
+                            semana."</p>
+                        <span class="autor-resena">- Andrés P. ⭐⭐⭐⭐</span>
+                    </div>
+                </div>
+            </article>
+
+            <article id="formulario-resena">
+                <h2>Deja tu reseña</h2>
+                <p>¿Ya nos visitaste? Cuéntanos cómo fue tu experiencia. Tu reseña aparecerá de inmediato en la lista.
+                </p>
+                <form class="formulario-reserva" id="form-resena">
+                    <label for="nombre-resena">Nombre:</label>
+                    <input type="text" id="nombre-resena" name="nombre" placeholder="Tu nombre" required>
+
+                    <label for="valoracion">Valoración:</label>
+                    <select id="valoracion" name="valoracion" required>
+                        <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐ Excelente</option>
+                        <option value="⭐⭐⭐⭐">⭐⭐⭐⭐ Muy bueno</option>
+                        <option value="⭐⭐⭐">⭐⭐⭐ Bueno</option>
+                        <option value="⭐⭐">⭐⭐ Regular</option>
+                        <option value="⭐">⭐ Malo</option>
+                    </select>
+
+                    <label for="comentario-resena">Comentario:</label>
+                    <textarea id="comentario-resena" name="comentario" rows="3"
+                        placeholder="Cuéntanos qué te pareció" required></textarea>
+
+                    <button type="submit" class="btn-enviar">Publicar reseña</button>
+                </form>
+                <p class="mensaje-exito" id="msg-resena">¡Gracias por tu reseña! Ya fue publicada. 🍨</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="pie">
+        <div class="pie-columnas">
+            <div>
+                <h4>Dankevsa</h4>
+                <p>Helados artesanales hechos con amor desde el corazón de la ciudad.</p>
+            </div>
+            <div>
+                <h4>Enlaces</h4>
+                <a href="index.html">Inicio</a>
+                <a href="menu.html">Menú</a>
+                <a href="reservas.html">Reservas</a>
+                <a href="reseñas.html">Reseñas</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="privacidad.html">Política de privacidad</a>
+            </div>
+            <div>
+                <h4>Contáctanos</h4>
+                <a href="tel:+573001234567">📞 300 123 4567</a>
+                <a href="mailto:hola@dankevsa.com">✉️ hola@dankevsa.com</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Calle+100+%2340-51" target="_blank"
+                    rel="noopener">📍 Calle 100 #40-51</a>
+            </div>
+        </div>
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/dankevsa" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+            <a href="https://www.facebook.com/dankevsa" target="_blank" rel="noopener" aria-label="Facebook">👍</a>
+            <a href="https://wa.me/573001234567" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+            <a href="mailto:hola@dankevsa.com" aria-label="Correo">✉️</a>
+        </div>
+        <hr>
+        Derechos reservados &copy; 2026 Heladería Dankevsa. <br>
+        Horario: Lunes a Domingo, 10:00 a.m. - 10:00 p.m.
+    </footer>
+
+    <!-- AVISO DE COOKIES -->
+    <div class="aviso-cookies" id="cookie-banner">
+        <p>🍪 Usamos cookies para mejorar tu experiencia y ofrecerte los mejores helados.
+            <a href="privacidad.html" style="color: #ff8fab; text-decoration: underline;">Política de privacidad</a>
+        </p>
+        <span>
+            <button class="btn-cookies" id="btn-rechazar-cookies"
+                style="background:#ffffff;color:#d81b60;border:2px solid #ff8fab;">Rechazar</button>
+            <button class="btn-cookies" id="btn-aceptar-cookies">Aceptar</button>
+        </span>
+    </div>
+
+    <button class="btn-scroll-top" id="btn-scroll-top" aria-label="Volver arriba">↑</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

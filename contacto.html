@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contáctanos - Heladería Dankevsa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/11c9ee736fbb5aad34a1729556a7c323-cono-de-helado-colorido.webp" type="image/webp">
+    <link rel="stylesheet" href="code.css">
+    <title>Contacto - Heladería Dankevsa</title>
+</head>
+
+<body class="cuerpo">
+    <!-- HEADER -->
+    <header class="header">
+        <img src="images/11c9ee736fbb5aad34a1729556a7c323-cono-de-helado-colorido.webp" alt="Logo Heladería"
+            class="logo">
+        <h1>¡Visítanos en Dankevsa!</h1>
+        <a href="reservas.html" class="btn-cta">🍨 Reserva ahora</a>
+    </header>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#experiencia">Experiencias</a></li>
+            <li><a href="menu.html">Productos</a></li>
+            <li><a href="index.html#nosotros">Nosotros</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="reseñas.html">Reseñas</a></li>
+            <li class="activo"><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <p class="breadcrumb"><a href="index.html">Inicio</a> &gt; Contacto</p>
+
+    <main class="contenido-principal">
+        <section class="seccion">
+            <article id="contacto">
+                <h2>Escríbenos</h2>
+                <p>¿Tienes dudas, sugerencias o quieres organizar un evento? Cuéntanos y te responderemos lo antes
+                    posible.</p>
+                <form class="formulario-reserva" id="form-contacto">
+                    <label for="nombre-c">Nombre:</label>
+                    <input type="text" id="nombre-c" name="nombre" placeholder="Tu nombre" required>
+
+                    <label for="correo-c">Correo electrónico:</label>
+                    <input type="email" id="correo-c" name="correo" placeholder="tu@correo.com" required>
+
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto">
+                        <option value="Consulta general">Consulta general</option>
+                        <option value="Eventos y celebraciones">Eventos y celebraciones</option>
+                        <option value="Trabaja con nosotros">Trabaja con nosotros</option>
+                        <option value="PQRS">PQRS</option>
+                    </select>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí"
+                        required></textarea>
+
+                    <button type="submit" class="btn-enviar">Enviar mensaje</button>
+                </form>
+                <p class="mensaje-exito" id="msg-contacto">Se abrió tu correo con el mensaje listo para enviar. 💌</p>
+
+                <h2>Otras formas de contactarnos</h2>
+                <div style="text-align:center;">
+                    <a href="https://wa.me/573001234567?text=Hola%20Dankevsa,%20tengo%20una%20consulta"
+                        target="_blank" rel="noopener" class="btn-accion">💬 WhatsApp</a>
+                    <a href="tel:+573001234567" class="btn-accion btn-secundario">📞 Llamar</a>
+                    <a href="mailto:hola@dankevsa.com" class="btn-accion btn-secundario">✉️ Correo</a>
+                </div>
+            </article>
+        </section>
+
+        <aside class="columna">
+            <blockquote style="text-align: left;">
+                <strong>Información de contacto</strong>
+                <ul class="info-lista">
+                    <li><span class="icono">📍</span>Calle 100 #40-51</li>
+                    <li><span class="icono">📞</span><a href="tel:+573001234567" style="color:#d81b60;">300 123
+                            4567</a></li>
+                    <li><span class="icono">✉️</span><a href="mailto:hola@dankevsa.com"
+                            style="color:#d81b60;">hola@dankevsa.com</a></li>
+                    <li><span class="icono">🕒</span>Lun-Vie: 11:00 a.m. - 9:00 p.m.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Sáb-Dom: 10:00 a.m. - 10:00 p.m.</li>
+                </ul>
+            </blockquote>
+
+            <div class="mapa-contenedor">
+                <iframe src="https://www.google.com/maps?q=Calle+100+%2340-51&output=embed" loading="lazy"
+                    title="Ubicación de Heladería Dankevsa"></iframe>
+            </div>
+            <div style="text-align:center;">
+                <a href="https://www.google.com/maps/dir/?api=1&destination=Calle+100+%2340-51" target="_blank"
+                    rel="noopener" class="btn-accion">🗺️ Cómo llegar</a>
+            </div>
+
+            <div class="newsletter">
+                <h3>Síguenos</h3>
+                <div class="redes-sociales">
+                    <a href="https://www.instagram.com/dankevsa" target="_blank" rel="noopener"
+                        aria-label="Instagram">📷</a>
+                    <a href="https://www.facebook.com/dankevsa" target="_blank" rel="noopener"
+                        aria-label="Facebook">👍</a>
+                    <a href="https://wa.me/573001234567" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="pie">
+        <div class="pie-columnas">
+            <div>
+                <h4>Dankevsa</h4>
+                <p>Helados artesanales hechos con amor desde el corazón de la ciudad.</p>
+            </div>
+            <div>
+                <h4>Enlaces</h4>
+                <a href="index.html">Inicio</a>
+                <a href="menu.html">Menú</a>
+                <a href="reservas.html">Reservas</a>
+                <a href="reseñas.html">Reseñas</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="privacidad.html">Política de privacidad</a>
+            </div>
+            <div>
+                <h4>Contáctanos</h4>
+                <a href="tel:+573001234567">📞 300 123 4567</a>
+                <a href="mailto:hola@dankevsa.com">✉️ hola@dankevsa.com</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Calle+100+%2340-51" target="_blank"
+                    rel="noopener">📍 Calle 100 #40-51</a>
+            </div>
+        </div>
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/dankevsa" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+            <a href="https://www.facebook.com/dankevsa" target="_blank" rel="noopener" aria-label="Facebook">👍</a>
+            <a href="https://wa.me/573001234567" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+            <a href="mailto:hola@dankevsa.com" aria-label="Correo">✉️</a>
+        </div>
+        <hr>
+        Derechos reservados &copy; 2026 Heladería Dankevsa. <br>
+        Horario: Lunes a Domingo, 10:00 a.m. - 10:00 p.m.
+    </footer>
+
+    <!-- AVISO DE COOKIES -->
+    <div class="aviso-cookies" id="cookie-banner">
+        <p>🍪 Usamos cookies para mejorar tu experiencia y ofrecerte los mejores helados.
+            <a href="privacidad.html" style="color: #ff8fab; text-decoration: underline;">Política de privacidad</a>
+        </p>
+        <span>
+            <button class="btn-cookies" id="btn-rechazar-cookies"
+                style="background:#ffffff;color:#d81b60;border:2px solid #ff8fab;">Rechazar</button>
+            <button class="btn-cookies" id="btn-aceptar-cookies">Aceptar</button>
+        </span>
+    </div>
+
+    <button class="btn-scroll-top" id="btn-scroll-top" aria-label="Volver arriba">↑</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

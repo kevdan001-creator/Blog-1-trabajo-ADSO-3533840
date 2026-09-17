@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Política de privacidad y cookies - Heladería Dankevsa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/11c9ee736fbb5aad34a1729556a7c323-cono-de-helado-colorido.webp" type="image/webp">
+    <link rel="stylesheet" href="code.css">
+    <title>Política de privacidad - Heladería Dankevsa</title>
+</head>
+
+<body class="cuerpo">
+    <!-- HEADER -->
+    <header class="header">
+        <img src="images/11c9ee736fbb5aad34a1729556a7c323-cono-de-helado-colorido.webp" alt="Logo Heladería"
+            class="logo">
+        <h1>¡Visítanos en Dankevsa!</h1>
+        <a href="reservas.html" class="btn-cta">🍨 Reserva ahora</a>
+    </header>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#experiencia">Experiencias</a></li>
+            <li><a href="menu.html">Productos</a></li>
+            <li><a href="index.html#nosotros">Nosotros</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="reseñas.html">Reseñas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <p class="breadcrumb"><a href="index.html">Inicio</a> &gt; Política de privacidad</p>
+
+    <main>
+        <section class="contenido-simple">
+            <article>
+                <h2 style="text-align:center;">Política de privacidad y cookies</h2>
+
+                <details open>
+                    <summary>¿Qué datos recogemos?</summary>
+                    <p>Solo los datos que tú nos entregas voluntariamente al llenar el formulario de reservas
+                        (nombre, correo, teléfono, fecha y número de personas), el formulario de contacto o al
+                        suscribirte a nuestro boletín. No pedimos datos financieros ni documentos de identidad.</p>
+                </details>
+
+                <details>
+                    <summary>¿Para qué los usamos?</summary>
+                    <p>Únicamente para confirmar tu reserva, responder tu mensaje y, si te suscribiste, enviarte
+                        promociones y novedades de sabores. No vendemos ni compartimos tu información con terceros.</p>
+                </details>
+
+                <details>
+                    <summary>¿Qué cookies usamos?</summary>
+                    <p>Usamos almacenamiento local del navegador para recordar si ya aceptaste este aviso y para
+                        guardar las reseñas que publicas desde este equipo. No usamos cookies de publicidad ni de
+                        seguimiento entre sitios.</p>
+                </details>
+
+                <details>
+                    <summary>¿Cómo borro mis datos?</summary>
+                    <p>Puedes borrar en cualquier momento la información guardada en tu navegador con el botón de
+                        abajo, o escribirnos a hola@dankevsa.com para solicitar la eliminación de tus datos de
+                        reserva.</p>
+                </details>
+
+                <div style="text-align:center;">
+                    <button class="btn-accion" id="btn-borrar-datos">🧹 Borrar mis datos de este navegador</button>
+                    <a href="mailto:hola@dankevsa.com?subject=Solicitud%20de%20datos" class="btn-accion btn-secundario">✉️
+                        Escribirnos</a>
+                </div>
+                <p class="mensaje-exito" id="msg-borrado">Listo, se borraron los datos guardados en este navegador. ✅
+                </p>
+
+                <time datetime="2026-09-16">Última actualización: 16/09/26</time>
+            </article>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="pie">
+        <div class="pie-columnas">
+            <div>
+                <h4>Dankevsa</h4>
+                <p>Helados artesanales hechos con amor desde el corazón de la ciudad.</p>
+            </div>
+            <div>
+                <h4>Enlaces</h4>
+                <a href="index.html">Inicio</a>
+                <a href="menu.html">Menú</a>
+                <a href="reservas.html">Reservas</a>
+                <a href="reseñas.html">Reseñas</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="privacidad.html">Política de privacidad</a>
+            </div>
+            <div>
+                <h4>Contáctanos</h4>
+                <a href="tel:+573001234567">📞 300 123 4567</a>
+                <a href="mailto:hola@dankevsa.com">✉️ hola@dankevsa.com</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Calle+100+%2340-51" target="_blank"
+                    rel="noopener">📍 Calle 100 #40-51</a>
+            </div>
+        </div>
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/dankevsa" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+            <a href="https://www.facebook.com/dankevsa" target="_blank" rel="noopener" aria-label="Facebook">👍</a>
+            <a href="https://wa.me/573001234567" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+            <a href="mailto:hola@dankevsa.com" aria-label="Correo">✉️</a>
+        </div>
+        <hr>
+        Derechos reservados &copy; 2026 Heladería Dankevsa. <br>
+        Horario: Lunes a Domingo, 10:00 a.m. - 10:00 p.m.
+    </footer>
+
+    <button class="btn-scroll-top" id="btn-scroll-top" aria-label="Volver arriba">↑</button>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('btn-borrar-datos').addEventListener('click', function () {
+            localStorage.removeItem('dankevsa_cookies');
+            localStorage.removeItem('dankevsa_resenas');
+            localStorage.removeItem('dankevsa_newsletter');
+            document.getElementById('msg-borrado').classList.add('mostrar');
+        });
+    </script>
+</body>
+
+</html>

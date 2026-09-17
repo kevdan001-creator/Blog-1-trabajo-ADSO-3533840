@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Reserva tu mesa en Heladería Dankevsa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/11c9ee736fbb5aad34a1729556a7c323-cono-de-helado-colorido.webp" type="image/webp">
+    <link rel="stylesheet" href="code.css">
+    <title>Reservas - Heladería Dankevsa</title>
+</head>
+
+<body class="cuerpo">
+    <!-- HEADER -->
+    <header class="header">
+        <img src="images/11c9ee736fbb5aad34a1729556a7c323-cono-de-helado-colorido.webp" alt="Logo Heladería"
+            class="logo">
+        <h1>¡Visítanos en Dankevsa!</h1>
+        <a href="reservas.html" class="btn-cta">🍨 Reserva ahora</a>
+    </header>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#experiencia">Experiencias</a></li>
+            <li><a href="menu.html">Productos</a></li>
+            <li><a href="index.html#nosotros">Nosotros</a></li>
+            <li class="activo"><a href="reservas.html">Reservas</a></li>
+            <li><a href="reseñas.html">Reseñas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <p class="breadcrumb"><a href="index.html">Inicio</a> &gt; Reservas</p>
+
+    <main class="contenido-principal">
+        <section class="seccion">
+            <article id="reservas">
+                <h2>Reserva tu mesa</h2>
+                <p>¿Vienes con amigos o familia? Asegura tu espacio para disfrutar de una tarde dulce. Te
+                    confirmaremos por correo o teléfono.</p>
+                <form class="formulario-reserva" id="form-reserva">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="300 123 4567" required>
+
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+
+                    <label for="hora">Hora:</label>
+                    <select id="hora" name="hora" required>
+                        <option value="11:00 a.m.">11:00 a.m.</option>
+                        <option value="1:00 p.m.">1:00 p.m.</option>
+                        <option value="3:00 p.m.">3:00 p.m.</option>
+                        <option value="5:00 p.m.">5:00 p.m.</option>
+                        <option value="7:00 p.m.">7:00 p.m.</option>
+                    </select>
+
+                    <label for="personas">Número de personas:</label>
+                    <input type="number" id="personas" name="personas" min="1" max="10" value="2">
+
+                    <label for="comentarios">Comentarios especiales:</label>
+                    <textarea id="comentarios" name="comentarios" rows="3"
+                        placeholder="Alergias, celebraciones, silla para bebé, etc. (opcional)"></textarea>
+
+                    <button type="submit" class="btn-enviar">Reservar ahora</button>
+                </form>
+
+                <p class="mensaje-exito" id="msg-reserva">¡Tu reserva fue recibida! Te contactaremos pronto para
+                    confirmarla. 🍦</p>
+
+                <div class="resumen-reserva" id="resumen-reserva"></div>
+            </article>
+        </section>
+
+        <aside class="columna">
+            <blockquote>
+                <strong>Horario de atención</strong><br>
+                Lunes a viernes: 11:00 a.m. - 9:00 p.m.<br>
+                Sábados y domingos: 10:00 a.m. - 10:00 p.m.
+            </blockquote>
+            <blockquote>
+                <strong>¿Prefieres llamar?</strong><br>
+                <a href="tel:+573001234567" style="color:#d81b60;">📞 300 123 4567</a><br>
+                <a href="mailto:hola@dankevsa.com" style="color:#d81b60;">✉️ hola@dankevsa.com</a><br><br>
+                <a href="https://wa.me/573001234567?text=Hola,%20quiero%20reservar%20una%20mesa%20en%20Dankevsa"
+                    target="_blank" rel="noopener" class="btn-accion">💬 Reservar por WhatsApp</a>
+            </blockquote>
+        </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="pie">
+        <div class="pie-columnas">
+            <div>
+                <h4>Dankevsa</h4>
+                <p>Helados artesanales hechos con amor desde el corazón de la ciudad.</p>
+            </div>
+            <div>
+                <h4>Enlaces</h4>
+                <a href="index.html">Inicio</a>
+                <a href="menu.html">Menú</a>
+                <a href="reservas.html">Reservas</a>
+                <a href="reseñas.html">Reseñas</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="privacidad.html">Política de privacidad</a>
+            </div>
+            <div>
+                <h4>Contáctanos</h4>
+                <a href="tel:+573001234567">📞 300 123 4567</a>
+                <a href="mailto:hola@dankevsa.com">✉️ hola@dankevsa.com</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Calle+100+%2340-51" target="_blank"
+                    rel="noopener">📍 Calle 100 #40-51</a>
+            </div>
+        </div>
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/dankevsa" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+            <a href="https://www.facebook.com/dankevsa" target="_blank" rel="noopener" aria-label="Facebook">👍</a>
+            <a href="https://wa.me/573001234567" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+            <a href="mailto:hola@dankevsa.com" aria-label="Correo">✉️</a>
+        </div>
+        <hr>
+        Derechos reservados &copy; 2026 Heladería Dankevsa. <br>
+        Horario: Lunes a Domingo, 10:00 a.m. - 10:00 p.m.
+    </footer>
+
+    <!-- AVISO DE COOKIES -->
+    <div class="aviso-cookies" id="cookie-banner">
+        <p>🍪 Usamos cookies para mejorar tu experiencia y ofrecerte los mejores helados.
+            <a href="privacidad.html" style="color: #ff8fab; text-decoration: underline;">Política de privacidad</a>
+        </p>
+        <span>
+            <button class="btn-cookies" id="btn-rechazar-cookies"
+                style="background:#ffffff;color:#d81b60;border:2px solid #ff8fab;">Rechazar</button>
+            <button class="btn-cookies" id="btn-aceptar-cookies">Aceptar</button>
+        </span>
+    </div>
+
+    <button class="btn-scroll-top" id="btn-scroll-top" aria-label="Volver arriba">↑</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
